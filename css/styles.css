@@ -17,6 +17,7 @@ body{
   margin:0;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   background-image: url("../images/background.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color:#0b1220;
@@ -87,3 +88,4 @@ body{
 /* Utilities */
 
 .text-center{text-align:center}
+
