@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Your Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-projects">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container projects-list">
+    <h1>Projects</h1>
+
+    <article class="project-card">
+      <img src="images/project1.jpg" alt="Project 1 screenshot">
+      <div class="project-content">
+        <h2>Student Information System</h2>
+        <p>A web-based system for managing student records. Features include student profiles, course records, and search/filter functionality.</p>
+        <p class="tech">Technologies: HTML, CSS, JavaScript</p>
+        <a class="btn" href="#">View Project</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="images/project2.jpg" alt="Project 2 screenshot">
+      <div class="project-content">
+        <h2>Personal Blog</h2>
+        <p>A blog built to share programming tutorials and notes. Includes an editor, tagging, and responsive layout.</p>
+        <p class="tech">Technologies: HTML, CSS, Markdown</p>
+        <a class="btn btn-outline" href="#">View Project</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <img src="images/project3.jpg" alt="Project 3 screenshot">
+      <div class="project-content">
+        <h2>To-Do App</h2>
+        <p>A simple task manager application with add/edit/delete functionality and localStorage persistence.</p>
+        <p class="tech">Technologies: HTML, CSS, JavaScript</p>
+        <a class="btn" href="#">View Project</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year3"></span> Your Name — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();
+  document.querySelector('.nav-toggle').addEventListener('click', () => document.querySelector('.main-nav').classList.toggle('open'));
+  </script>
+</body>
+</html>

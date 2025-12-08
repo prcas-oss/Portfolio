@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home — Your Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Cas</a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <section class="intro">
+      <div class="intro-left">
+        <h1>Welcome to Cas Portfolio</h1>
+        <p class="lead">I am a Computer Science student BSCS-1A. I build web projects and learn full-stack development. I enjoy turning ideas into clean, responsive websites.</p>
+        <div class="cta">
+          <a class="btn" href="about.html">About Me</a>
+          <a class="btn btn-outline" href="projects.html">See Projects</a>
+        </div>
+      </div>
+      <aside class="intro-right">
+        <img src="images/profile.jpg" alt="Profile photo of Your Name" class="profile-img">
+      </aside>
+    </section>
+
+    <section class="overview">
+      <h2>What you'll find here</h2>
+      <p>Explore my skills, view my projects (classwork and personal builds), and use the contact page to reach out for collaborations or freelance work.</p>
+      <div class="quick-links">
+        <a href="about.html">About • </a>
+        <a href="projects.html">Projects • </a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Cas — All rights reserved.</p>
+      <div class="social-footer">
+        <a href="https://www.facebook.com/princess.mae.cas.2024">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small script: set year and handle nav toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
