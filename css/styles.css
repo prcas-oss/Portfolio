@@ -4,7 +4,7 @@
   --card: #ffffff;
   --accent: #ff4da6; /* pink /; / blue */
   --accent-2: #10b981; /* green */
-  --muted: #6b7280;
+  --muted: #e5e7eb;
   --nav-bg: #0f172a; /* dark */
   --footer-bg: #0b1220;
   --max-width: 1100px;
@@ -88,6 +88,7 @@ body{
 /* Utilities */
 
 .text-center{text-align:center}
+
 
 
 
