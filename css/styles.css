@@ -2,10 +2,10 @@
 :root{
   --bg: #f7fafc;
   --card: #ffffff;
-  --accent: #ff4da6; /* pink */
-  --accent-2: #10b981; /* green */
-  --muted: #e5e7eb; /* LIGHTER GRAY for visibility on dark background */
-  --nav-bg: #0f172a; /* dark */
+  --accent: #ff4da6; 
+  --accent-2: #10b981; 
+  --muted: #e5e7eb;
+  --nav-bg: #0f172a;
   --footer-bg: #0b1220;
   --max-width: 1100px;
   --radius: 12px;
@@ -74,9 +74,23 @@ body{
 
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.contact-form{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+.contact-form{
+  background:var(--nav-bg);
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(2,6,23,0.3);
+}
 .contact-form label{display:block;margin-top:12px}
-.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:6px}
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e6e9ef;
+  margin-top:6px;
+  background: #2d3748;
+  color: white; 
+}
 .contact-info{padding:12px}
 .social-links a{display:inline-block;margin-right:10px}
 
@@ -98,5 +112,6 @@ body{
 /* Utilities */
 
 .text-center{text-align:center}
+
 
 
