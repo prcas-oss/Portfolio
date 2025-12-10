@@ -2,9 +2,9 @@
 :root{
   --bg: #f7fafc;
   --card: #ffffff;
-  --accent: #ff4da6; /* pink /; / blue */
+  --accent: #ff4da6; /* pink */
   --accent-2: #10b981; /* green */
-  --muted: #e5e7eb;
+  --muted: #e5e7eb; /* LIGHTER GRAY for visibility on dark background */
   --nav-bg: #0f172a; /* dark */
   --footer-bg: #0b1220;
   --max-width: 1100px;
@@ -16,11 +16,11 @@ html,body{height:100%}
 body{
   margin:0;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background-image: url("../images/background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color:white;
+  color:white; /* CHANGED: Main body text color to white */
   line-height:1.6;
   font-size:16px;
 }
@@ -52,7 +52,17 @@ body{
 
 /* Projects */
 .projects-list{padding:36px 0}
-.project-card{display:flex;gap:20px;background:var(--card);padding:16px;border-radius:var(--radius);margin-bottom:16px;align-items:center;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+.project-card{
+  display:flex;
+  gap:20px;
+  background:var(--nav-bg); /* CHANGED: Dark background for visibility */
+  padding:16px;
+  border-radius:var(--radius);
+  margin-bottom:16px;
+  align-items:center;
+  box-shadow:0 6px 18px rgba(2,6,23,0.3); /* Darker shadow */
+  border-bottom: 3px solid var(--accent); /* NEW: Pink bar at the bottom */
+}
 .project-card img{width:220px;height:140px;object-fit:cover;border-radius:8px}
 .project-content{flex:1}
 .tech{color:var(--muted);font-style:italic}
@@ -88,8 +98,3 @@ body{
 /* Utilities */
 
 .text-center{text-align:center}
-
-
-
-
-
