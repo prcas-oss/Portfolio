@@ -20,7 +20,7 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color:white; /* CHANGED: Main body text color to white */
+  color:white;
   line-height:1.6;
   font-size:16px;
 }
@@ -98,4 +98,5 @@ body{
 /* Utilities */
 
 .text-center{text-align:center}
+
 
